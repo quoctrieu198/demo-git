@@ -1,0 +1,39 @@
+{
+  "products": [
+    {
+      "name": "Product3",
+      "price": 100000,
+      "images": "product-03.png",
+      "description": "fsdfđsf",
+      "id": "1"
+    },
+    {
+      "name": "dong ho",
+      "price": 999,
+      "images": "product-06.png",
+      "description": "dep kinh",
+      "id": "857d"
+    },
+    {
+      "id": "a21b",
+      "name": "thonglong",
+      "images": "product-02.png",
+      "price": 999,
+      "description": "ádadsasdasd"
+    },
+    {
+      "name": "quydu666",
+      "price": 666,
+      "images": "product-05.png",
+      "description": "112412341242141",
+      "id": "d466"
+    },
+    {
+      "name": "abc123",
+      "price": 222,
+      "images": "product-01.png",
+      "description": "hjbhbmnbhjbnm",
+      "id": "8e50"
+    }
+  ]
+}

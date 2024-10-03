@@ -1,0 +1,26 @@
+<h1>Danh sach san pham</h1>
+<a href="#!/add"><button class="btn btn-primary" ng-click="onSubmit()">Thêm Mới</button></a>
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Image</th>
+        <th>Price</th>
+        <th>Des</th>
+        <th>Action</th>
+   
+    </tr>
+    <tr ng-repeat="p in products">
+        <td> {{p.id}} </td>
+        <td> {{p.name}} </td>
+        <td> <img src="/ruiz/assets/images/product/{{p.images}}" alt="" style="width: 150px; height: auto; object-fit: cover;"> </td>
+        <td> {{p.price}} </td>
+        <td> {{p.description}} </td>
+        <td> 
+            <button class="btn btn-success" ng-click="onDetail(p.id)">Chi tiết</button>
+            <button class="btn btn-warning" ng-click="onEdit(p.id)">Sửa</button>
+            <button class="btn btn-danger" ng-click="onDelete(p.id)">Xoá</button> 
+        </td>
+       
+    </tr>
+</table>

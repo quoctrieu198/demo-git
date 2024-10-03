@@ -1,0 +1,30 @@
+<h1>Thêm mới</h1>
+<form action="" name="addform">
+    <div>
+        <label for="" class="form-label">Name</label>
+        <input type="text" class="form-control" ng-model="inputValue.name" name="name" required minlength="6" maxlength="99">
+        <p ng-if="addform.name.$dirty && addform.name.$error.required" class="text-danger">Tên không được bỏ trống</p>
+        <p ng-if="addform.name.$dirty && addform.name.$error.minlength" class="text-danger">Tên không được dưới 6 kí tự</p>
+        <p ng-if="addform.name.$dirty && addform.name.$error.maxlength" class="text-danger">Tên không được quá 100 kí tự</p>
+    </div>
+    <div>
+        <label for="" class="form-label">Img</label>
+        <input type="text" class="form-control" ng-model="inputValue.images" name="images" required minlength="6" maxlength="99">
+        <p ng-if="addform.images.$dirty && addform.images.$error.required" class="text-danger">Không được bỏ trống</p>
+    </div>
+    <div>
+        <label for="" class="form-label">Price</label>
+        <input type="number" class="form-control" ng-model="inputValue.price" name="price" required minlength="0">
+        <p ng-if="addform.price.$dirty && addform.price.$error.required" class="text-danger">Không được bỏ trống</p>
+        <p ng-if="addform.price.$dirty && addform.price.$error.minlength" class="text-danger">Không được âm 0</p>
+    </div>
+    <div>
+        <label for="" class="form-label">Description</label>
+        <input type="text" class="form-control" ng-model="inputValue.description" name="description" required minlength="6" maxlength="99">
+        <p ng-if="addform.description.$dirty && addform.description.$error.required" class="text-danger">Mô tả không được bỏ trống</p>
+        <p ng-if="addform.description.$dirty && addform.description.$error.minlength" class="text-danger">Không được dưới 6 kí tự</p>
+    </div>
+    <center>
+        <button type="button" class="btn btn-primary mt-3" ng-click="onSubmit()">Thêm mới</button>
+    </center>
+</form>
